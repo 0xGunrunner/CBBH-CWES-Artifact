@@ -1,5 +1,5 @@
 # CBBH-CWES-Artifact
-Some python script I made during the course of preparing for CBBH/CWES
+Some python scripts I made during the course of preparing for CBBH/CWES
 
 The `gopher-manual.py` is for correctly encode the request to gopher URL scheme to send arbitrary bytes to a TCP socket `(it will automatically encode the URL twice)`.
 
